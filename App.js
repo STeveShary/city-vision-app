@@ -1,17 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, FlatList } from 'react-native';
 import Event from './components/event';
-
-
+import moment from 'moment';
+import { getSchedule } from './data';
 export default class App extends React.Component {
-  schedule = [
-    {
-      name: 'Group Prayer',
-      location: 'Schrodary house',
-      timeStart: Date.parse('2017-12-16T08:00:00'),
-      stopStart: Date.parse('2017-12-16T09:00:00')
-    }
-  ]
+  
   render() {
     return (
       <View style={styles.container}>
@@ -21,8 +14,9 @@ export default class App extends React.Component {
         <View style={styles.scheduleContainer}>
           <Text style={styles.scheduleTitle}>Upcoming Events</Text>
           <FlatList
-            data={this.schedule}
-            renderItem={({ item }) => <Event key={item.timeStart} info={item}/>}
+            data={getSchedule()}
+            renderItem={({ item }) => <Event info={item}/>}
+            keyExtractor={(item, index) => item.name + item.timeStart}
           /> 
         </View>
       </View>
@@ -32,20 +26,27 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   logo: {
+    height: 52,
   },
   scheduleTitle: {
-    fontSize: 20,
-    borderBottomWidth: 1.5,
-    borderColor: '#d6d7da',
+    fontSize: 30,
+    paddingTop: 10,
+    paddingBottom: 5,
+    borderBottomWidth: 2,
+    borderColor: '#0FBE7C',
   },
   headerContainer: {
     flex: 1,
     alignItems: 'center',
     paddingTop: 50,
     alignItems: 'center',
+    borderBottomWidth: 5,
+    borderColor: '#333333',
+    paddingBottom: 10,
+    marginBottom: 20,
   },
   scheduleContainer: {
-    flex: 1,
+    flex: 9,
     alignItems: 'stretch',
     paddingLeft: 10,
   },
