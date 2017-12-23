@@ -43,7 +43,7 @@ const schedule = [
     },
     {
       name: 'CT (Central Teaching)',
-      locationName: 'Rennovation Church (Basement)',
+      locationName: 'Rennovation Center (Lower level)',
       locationAddress: '567 Hertel Ave, Buffalo, NY 14207',
       timeStart: moment('2018-01-09T18:30:00-05:00')
     },
@@ -67,7 +67,7 @@ const schedule = [
     },
     {
       name: 'CT (Central Teaching)',
-      locationName: 'Rennovation Church (Basement)',
+      locationName: 'Rennovation Center (Lower level)',
       locationAddress: '567 Hertel Ave, Buffalo, NY 14207',
       timeStart: moment('2018-01-23T18:30:00-05:00')
     }
