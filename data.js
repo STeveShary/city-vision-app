@@ -27,7 +27,7 @@ const schedule = [
     {
       name: 'CT (Central Teaching)',
       locationName: 'Rennovation Center (Upper Level)',
-      locationAddress: '567 Hertel Ave, Buffalo, NY 14207',
+      locationAddress: '597 Hertel Ave, Buffalo, NY 14207',
       timeStart: moment('2018-03-11T17:15:00-05:00')
     },
     {
@@ -51,7 +51,7 @@ const schedule = [
     {
       name: 'CT (Central Teaching)',
       locationName: 'Rennovation Center (Upper Level)',
-      locationAddress: '567 Hertel Ave, Buffalo, NY 14207',
+      locationAddress: '597 Hertel Ave, Buffalo, NY 14207',
       timeStart: moment('2018-03-25T17:15:00-05:00')
     },
     {
@@ -75,7 +75,7 @@ const schedule = [
     {
       name: 'CT (Central Teaching)',
       locationName: 'Rennovation Center (Upper Level)',
-      locationAddress: '567 Hertel Ave, Buffalo, NY 14207',
+      locationAddress: '597 Hertel Ave, Buffalo, NY 14207',
       timeStart: moment('2018-04-08T17:15:00-05:00')
     },
     {
