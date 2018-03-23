@@ -31,12 +31,12 @@ export default class AddressLink extends React.Component {
 
 const styles = StyleSheet.create({
     container: {
-        paddingLeft: 20,
+        paddingLeft: 10,
     },
     name: {
-        color: 'blue',
+        color: '#2453a1',
     },
     address: {
-        color: 'blue'
+        color: '#2453a1'
     }
 }); 
