@@ -57,15 +57,15 @@ const lightGrey = "#EEEEEE"
 
 const styles = StyleSheet.create({
     dayOfWeek: {
-        fontSize: 36,
+        fontSize: 28,
         color: darkGrey,
     },
     month: {
-        fontSize: 16,
+        fontSize: 14,
         color: darkGrey,
     },
     dayOfMonth: {
-        fontSize: 20,
+        fontSize: 18,
         color: darkGrey,
     },
     eventContainer: {
@@ -87,12 +87,12 @@ const styles = StyleSheet.create({
     time: {
         paddingBottom: 4,
         paddingLeft: 10,
-        fontSize: 18,
+        fontSize: 16,
         color: darkGrey,
     },
     name: {
         color: darkGrey,
-        fontSize: 28,
+        fontSize: 22,
         paddingTop: 2,
         paddingBottom: 5,
         paddingLeft: 9,
