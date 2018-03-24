@@ -54,6 +54,7 @@ export default class Event extends React.Component {
 
 const darkGrey = "#585858"
 const lightGrey = "#EEEEEE"
+const grey = "#DDDDDD"
 
 const styles = StyleSheet.create({
     dayOfWeek: {
@@ -82,7 +83,7 @@ const styles = StyleSheet.create({
         margin: 2,
         borderRadius: 6,
         borderWidth: 1,
-        borderColor: lightGrey,
+        borderColor: grey,
     },
     time: {
         paddingBottom: 4,

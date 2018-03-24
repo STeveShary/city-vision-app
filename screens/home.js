@@ -44,6 +44,7 @@ export default class HomeScreen extends React.Component {
 
 const darkGrey = "#585858"
 const lightGrey = "#EEEEEE"
+const grey = "#DDDDDD"
 
 const styles = StyleSheet.create({
     settings: {
@@ -57,9 +58,11 @@ const styles = StyleSheet.create({
     scheduleHeader: {
         flexDirection: "row",
         justifyContent: "space-between",
-        // borderBottomWidth: 2,
-        // borderColor: darkGrey,
         backgroundColor: lightGrey,
+        margin: 6,
+        borderRadius: 3,
+        borderWidth: 1,
+        borderColor: grey,
     },
     calendar: {
         paddingRight: 20,
@@ -70,12 +73,12 @@ const styles = StyleSheet.create({
     },
     title: {
         paddingLeft: 10,
-        fontSize: 30,
+        fontSize: 24,
     },
     scheduleTitle: {
         fontSize: 24,
-        paddingBottom: 10,
-        paddingLeft: 15,
+        paddingLeft: 10,
+        padding: 5,
     },
     headerContainer: {
         flex: 1,
@@ -84,10 +87,6 @@ const styles = StyleSheet.create({
         paddingLeft: 20,
         paddingTop: 30,
         alignItems: 'center',
-        borderBottomWidth: 1,
-        borderColor: darkGrey,
-        paddingBottom: 10,
-        // marginBottom: 20,
     },
     scheduleContainer: {
         flex: 9,
